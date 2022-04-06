@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="https://kit.fontawesome.com/027a549cd1.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./matrix.css">
+    <title>Matrix_Calculator</title>
+</head>
+<body>
+    <!-- wrap start -->
+    <div class="wrap">
+
+        <!-- header start -->
+        <h1>행렬계산기</h1>
+        <!-- header end -->
+
+        <!-- firstNav(inputArea) start -->
+        <nav class="firstNav">
+            <ul>
+                <li>
+                    <h2>행렬 1</h2>
+                    <div class="inputArea">
+                        <span><input type="text">&nbsp;행</span>
+                        <span><input type="text">&nbsp;열</span>
+                    </div>
+                </li>
+                <li>
+                    <h2>행렬 2</h2>
+                    <div class="inputArea">
+                        <span><input type="text">&nbsp;행</span>
+                        <span><input type="text">&nbsp;열</span>
+                    </div>
+                </li>
+            </ul>
+            <div class="btnArea">
+                <button>만들기</button>
+            </div>
+        </nav>
+        <!-- firstNav(inputArea) end -->
+
+        <!-- secondNav(calArea) start -->
+        <nav class="secondNav">
+            <div>Random</div>
+            <div><i class="fa-solid fa-plus"></i></div>
+            <div><i class="fa-solid fa-minus"></i></div>
+            <div><i class="fa-solid fa-xmark"></i></div>
+        </nav>
+        <!-- secondNav(calArea) end -->
+
+        <!-- thirdNav(textArea) start -->
+        <nav class="thirdNav">
+            <li>행렬 1</li>
+            <li>행렬 2</li>
+            <li>결과</li>
+        </nav>
+        <!-- thirdNav(textArea) end -->
+
+        <!-- boxArea start -->
+        <div class="boxArea">
+            <div class="firstMatrix"></div>
+            <div class="secondMatrix"></div>
+            <div class="resultMatrix"></div>
+        </div>
+        <!-- boxArea end -->
+
+        <!-- modalBox start -->
+        <div class="modalBox">
+            <p></p>
+            <div class="exitBtn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <!-- modalBox end -->
+
+    </div>
+    <!-- wrap end -->
+
+    <script src="./matrix.js"></script>
+</body>
+</html>
