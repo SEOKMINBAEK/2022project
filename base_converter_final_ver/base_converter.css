@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'twayair';
+  color: #414141;
+}
+
+@font-face {
+  font-family: 'twayair';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.calWrap {
+  position: absolute;
+  width: 1000px;
+  height: 500px;
+  background-color: powderblue;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50px;
+  border: 5px solid navy;
+  -webkit-box-shadow: 10px 10px 10px gray;
+          box-shadow: 10px 10px 10px gray;
+}
+
+.calWrap h1 {
+  height: 150px;
+  text-align: center;
+  line-height: 149px;
+  font-size: 40px;
+  color: navy;
+}
+
+.calWrap .inputLine {
+  width: 600px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.calWrap .inputLine span {
+  display: inline-block;
+  width: 80px;
+  height: 100px;
+  font-size: 20px;
+  line-height: 99px;
+  margin-left: 10px;
+  color: navy;
+}
+
+.calWrap .inputLine input {
+  display: inline-block;
+  text-align: right;
+  width: 100px;
+  height: 30px;
+  -webkit-transform: translate(0, -2px);
+          transform: translate(0, -2px);
+  outline: 0;
+  font-size: 18px;
+  border: 0;
+  border-radius: 10px;
+  color: navy;
+}
+
+.calWrap .inputLine button {
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  margin: 0 20px;
+  -webkit-transform: translate(0, -2px);
+          transform: translate(0, -2px);
+  border-radius: 10px;
+  background-color: navy;
+  color: whitesmoke;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #7575fa;
+          box-shadow: 0 0 5px #7575fa;
+  font-size: 18px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.calWrap .inputLine button:hover {
+  background-color: whitesmoke;
+  color: navy;
+  -webkit-transform: translate(0, -5px);
+          transform: translate(0, -5px);
+}
+
+.calWrap .alertBox {
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 149px;
+  color: navy;
+}
+/*# sourceMappingURL=base_converter.css.map */
