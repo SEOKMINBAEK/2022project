@@ -1,0 +1,715 @@
+@charset "UTF-8";
+/******************************************************************
+    reset
+******************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  list-style-type: none;
+  color: whitesmoke;
+}
+
+/******************************************************************
+    프로그램카드 속성(float값,height값)
+******************************************************************/
+/******************************************************************
+    프로그램카드:호버 속성
+******************************************************************/
+/******************************************************************
+    body 시작
+******************************************************************/
+html, body {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+  color: whitesmoke;
+  /******************************************************************
+    myHead 시작 ( 상단 고정메뉴 )
+******************************************************************/
+  /******************************************************************
+myHead 종료
+******************************************************************/
+  /******************************************************************
+    myContainer 시작
+******************************************************************/
+  /******************************************************************
+    myContainer 종료
+******************************************************************/
+  /******************************************************************
+    myFooter 시작
+******************************************************************/
+  /******************************************************************
+    myFooter 종료
+******************************************************************/
+}
+
+html a, body a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+html .videoWrap, body .videoWrap {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+}
+
+html .videoWrap video, body .videoWrap video {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+html .myHeadWrap, body .myHeadWrap {
+  width: 100%;
+  height: 100px;
+  background: rgba(100, 100, 100, 0.1);
+  position: fixed;
+  z-index: 999;
+}
+
+html .myHeadWrap .myHead, body .myHeadWrap .myHead {
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+html .myHeadWrap .myHead .headLogo, body .myHeadWrap .myHead .headLogo {
+  display: inline-block;
+  position: absolute;
+  top: -150%;
+  width: 360px;
+  height: 360px;
+  text-align: center;
+  background-image: url("./img/moon4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 30px silver;
+          box-shadow: 0 0 30px silver;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+html .myHeadWrap .myHead .headLogo img, body .myHeadWrap .myHead .headLogo img {
+  position: absolute;
+  width: 50%;
+  top: 65%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: top 1s;
+  transition: top 1s;
+}
+
+html .myHeadWrap .myHead .headLogo:hover, body .myHeadWrap .myHead .headLogo:hover {
+  -webkit-box-shadow: 0 0 130px white;
+          box-shadow: 0 0 130px white;
+  top: 0;
+}
+
+html .myHeadWrap .myHead .headLogo:hover img, body .myHeadWrap .myHead .headLogo:hover img {
+  top: 50%;
+}
+
+html .myHeadWrap .myHead ul, body .myHeadWrap .myHead ul {
+  display: inline-block;
+  width: 90%;
+  height: 100%;
+  float: right;
+}
+
+html .myHeadWrap .myHead ul li, body .myHeadWrap .myHead ul li {
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  line-height: 99px;
+  font-size: 22px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+html .myHeadWrap .myHead ul li:hover, body .myHeadWrap .myHead ul li:hover {
+  background-color: #a87c83;
+  padding-top: 50px;
+  font-weight: bold;
+}
+
+html .myContainer, body .myContainer {
+  width: 1200px;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  /******************************************************************
+    mainContent 시작 ( youtube영상 및 리스트 )
+******************************************************************/
+  /******************************************************************
+    mainContent 종료
+******************************************************************/
+  /******************************************************************
+    bookroad 시작
+******************************************************************/
+  /******************************************************************
+    bookroad 종료
+******************************************************************/
+  /******************************************************************
+    introProgram 시작 ( 프로그램 안내 )
+******************************************************************/
+  /******************************************************************
+    introProgram 종료
+******************************************************************/
+  /******************************************************************
+    introFAQ 시작
+******************************************************************/
+  /******************************************************************
+    introFAQ 종료
+******************************************************************/
+  /******************************************************************
+    introBook 시작
+******************************************************************/
+  /******************************************************************
+    introBook 종료
+******************************************************************/
+}
+
+html .myContainer .mainContent, body .myContainer .mainContent {
+  z-index: 100;
+  width: 100%;
+  height: 1100px;
+}
+
+html .myContainer .mainContent .anchorPoint, body .myContainer .mainContent .anchorPoint {
+  height: 100px;
+}
+
+html .myContainer .mainContent ul, body .myContainer .mainContent ul {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0;
+}
+
+html .myContainer .mainContent ul li, body .myContainer .mainContent ul li {
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  overflow: hidden;
+}
+
+html .myContainer .mainContent ul li img, body .myContainer .mainContent ul li img {
+  width: 100%;
+}
+
+html .myContainer .mainContent ul li:hover, body .myContainer .mainContent ul li:hover {
+  cursor: pointer;
+}
+
+html .myContainer .introStreet, body .myContainer .introStreet {
+  position: relative;
+  width: 100%;
+  height: 870px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 30px rgba(255, 192, 192, 0.5);
+          box-shadow: 0 0 30px rgba(255, 192, 192, 0.5);
+  text-align: center;
+}
+
+html .myContainer .introStreet .anchorPoint, body .myContainer .introStreet .anchorPoint {
+  height: 100px;
+}
+
+html .myContainer .introStreet span, body .myContainer .introStreet span {
+  font-size: 40px;
+}
+
+html .myContainer .introStreet h1, body .myContainer .introStreet h1 {
+  display: inline-block;
+  height: 40px;
+  text-align: center;
+  line-height: 39px;
+  font-size: 40px;
+}
+
+html .myContainer .introStreet h3, body .myContainer .introStreet h3 {
+  height: 20px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 19px;
+  font-size: 20px;
+  margin: 40px 0;
+}
+
+html .myContainer .introStreet ul, body .myContainer .introStreet ul {
+  position: relative;
+  width: 1000px;
+  height: 50px;
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html .myContainer .introStreet ul li, body .myContainer .introStreet ul li {
+  position: relative;
+  width: 15%;
+  height: 100%;
+  line-height: 49px;
+  font-size: 15px;
+}
+
+html .myContainer .introStreet ul li::after, body .myContainer .introStreet ul li::after {
+  content: "▪▪▪";
+  font-size: 20px;
+  line-height: 49px;
+  color: whitesmoke;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+
+html .myContainer .introStreet ul li:last-child::after, body .myContainer .introStreet ul li:last-child::after {
+  content: "";
+}
+
+html .myContainer .introStreet ul li:first-child, body .myContainer .introStreet ul li:first-child {
+  font-size: 18px;
+  color: pink;
+  line-height: 30px;
+}
+
+html .myContainer .introStreet .leftBtn, body .myContainer .introStreet .leftBtn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 490px;
+  left: 5%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 50px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+html .myContainer .introStreet .rightBtn, body .myContainer .introStreet .rightBtn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 490px;
+  right: 5%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  font-size: 50px;
+  cursor: pointer;
+}
+
+html .myContainer .introStreet .introBox, body .myContainer .introStreet .introBox {
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+          box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html .myContainer .introStreet .introBox .imageBox, body .myContainer .introStreet .introBox .imageBox {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  background: url("./img/bookRoad1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html .myContainer .introStreet .introBox .textWrap, body .myContainer .introStreet .introBox .textWrap {
+  width: 50%;
+  height: 400px;
+  margin-top: 50px;
+  position: relative;
+}
+
+html .myContainer .introStreet .introBox .textWrap .textBox, body .myContainer .introStreet .introBox .textWrap .textBox {
+  display: inline-block;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+html .myContainer .introStreet .introBox .textWrap .textBox h3, body .myContainer .introStreet .introBox .textWrap .textBox h3 {
+  font-size: 22px;
+  margin: 0px 0 30px 0;
+}
+
+html .myContainer .introStreet .introBox .textWrap .textBox p, body .myContainer .introStreet .introBox .textWrap .textBox p {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+html .myContainer .introStreet .introBox .textWrap .textBox h5, body .myContainer .introStreet .introBox .textWrap .textBox h5 {
+  margin: 30px 0 30px 0;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+html .myContainer .introStreet .introBox .textWrap .textBox i, body .myContainer .introStreet .introBox .textWrap .textBox i {
+  font-size: 30px;
+  margin-right: 10px;
+  -webkit-transform: translate(0, 8px);
+          transform: translate(0, 8px);
+}
+
+html .myContainer .introStreet .introBox .textWrap .textBox a, body .myContainer .introStreet .introBox .textWrap .textBox a {
+  color: skyblue;
+  font-size: 15px;
+}
+
+html .myContainer .introProgram, body .myContainer .introProgram {
+  width: 100%;
+  height: 2400px;
+}
+
+html .myContainer .introProgram .anchorPoint, body .myContainer .introProgram .anchorPoint {
+  height: 100px;
+}
+
+html .myContainer .introProgram h2, body .myContainer .introProgram h2 {
+  height: 100px;
+  line-height: 99px;
+  margin-left: 50px;
+  color: whitesmoke;
+}
+
+html .myContainer .introProgram .winterFestival, body .myContainer .introProgram .winterFestival {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 560px;
+  overflow: hidden;
+  float: left;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  padding-bottom: 50px;
+  border-radius: 20px;
+}
+
+html .myContainer .introProgram .winterFestival img, body .myContainer .introProgram .winterFestival img {
+  width: 100%;
+}
+
+html .myContainer .introProgram .winterFestival h3, html .myContainer .introProgram .winterFestival h4, html .myContainer .introProgram .winterFestival p, body .myContainer .introProgram .winterFestival h3, body .myContainer .introProgram .winterFestival h4, body .myContainer .introProgram .winterFestival p {
+  width: 90%;
+  margin: 0 auto;
+}
+
+html .myContainer .introProgram .winterFestival h3, body .myContainer .introProgram .winterFestival h3 {
+  margin-top: 50px;
+}
+
+html .myContainer .introProgram .winterFestival a, body .myContainer .introProgram .winterFestival a {
+  color: powderblue;
+}
+
+html .myContainer .introProgram .winterFestival:hover, body .myContainer .introProgram .winterFestival:hover {
+  -webkit-box-shadow: 0 0 30px rgba(255, 192, 192, 0.5);
+          box-shadow: 0 0 30px rgba(255, 192, 192, 0.5);
+  color: rgba(255, 192, 192, 0.5);
+  font-weight: bold;
+}
+
+html .myContainer .introProgram .writerdayFestival, body .myContainer .introProgram .writerdayFestival {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 560px;
+  overflow: hidden;
+  float: right;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  padding-bottom: 50px;
+  border-radius: 20px;
+}
+
+html .myContainer .introProgram .writerdayFestival img, body .myContainer .introProgram .writerdayFestival img {
+  width: 100%;
+}
+
+html .myContainer .introProgram .writerdayFestival h3, html .myContainer .introProgram .writerdayFestival h4, html .myContainer .introProgram .writerdayFestival p, body .myContainer .introProgram .writerdayFestival h3, body .myContainer .introProgram .writerdayFestival h4, body .myContainer .introProgram .writerdayFestival p {
+  width: 90%;
+  margin: 0 auto;
+}
+
+html .myContainer .introProgram .writerdayFestival h3, body .myContainer .introProgram .writerdayFestival h3 {
+  margin-top: 50px;
+}
+
+html .myContainer .introProgram .writerdayFestival a, body .myContainer .introProgram .writerdayFestival a {
+  color: powderblue;
+}
+
+html .myContainer .introProgram .writerdayFestival img, body .myContainer .introProgram .writerdayFestival img {
+  height: 600px;
+}
+
+html .myContainer .introProgram .writerdayFestival:hover, body .myContainer .introProgram .writerdayFestival:hover {
+  -webkit-box-shadow: 0 0 30px rgba(255, 192, 192, 0.5);
+          box-shadow: 0 0 30px rgba(255, 192, 192, 0.5);
+  color: rgba(255, 192, 192, 0.5);
+  font-weight: bold;
+}
+
+html .myContainer .introProgram .wanseoFestival, body .myContainer .introProgram .wanseoFestival {
+  margin-top: 100px;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 560px;
+  overflow: hidden;
+  float: left;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  padding-bottom: 50px;
+  border-radius: 20px;
+}
+
+html .myContainer .introProgram .wanseoFestival img, body .myContainer .introProgram .wanseoFestival img {
+  width: 100%;
+}
+
+html .myContainer .introProgram .wanseoFestival h3, html .myContainer .introProgram .wanseoFestival h4, html .myContainer .introProgram .wanseoFestival p, body .myContainer .introProgram .wanseoFestival h3, body .myContainer .introProgram .wanseoFestival h4, body .myContainer .introProgram .wanseoFestival p {
+  width: 90%;
+  margin: 0 auto;
+}
+
+html .myContainer .introProgram .wanseoFestival h3, body .myContainer .introProgram .wanseoFestival h3 {
+  margin-top: 50px;
+}
+
+html .myContainer .introProgram .wanseoFestival a, body .myContainer .introProgram .wanseoFestival a {
+  color: powderblue;
+}
+
+html .myContainer .introProgram .wanseoFestival:hover, body .myContainer .introProgram .wanseoFestival:hover {
+  -webkit-box-shadow: 0 0 30px rgba(255, 192, 192, 0.5);
+          box-shadow: 0 0 30px rgba(255, 192, 192, 0.5);
+  color: rgba(255, 192, 192, 0.5);
+  font-weight: bold;
+}
+
+html .myContainer .introProgram .haetaeFestival, body .myContainer .introProgram .haetaeFestival {
+  margin-top: 100px;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 560px;
+  overflow: hidden;
+  float: right;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  padding-bottom: 50px;
+  border-radius: 20px;
+}
+
+html .myContainer .introProgram .haetaeFestival img, body .myContainer .introProgram .haetaeFestival img {
+  width: 100%;
+}
+
+html .myContainer .introProgram .haetaeFestival h3, html .myContainer .introProgram .haetaeFestival h4, html .myContainer .introProgram .haetaeFestival p, body .myContainer .introProgram .haetaeFestival h3, body .myContainer .introProgram .haetaeFestival h4, body .myContainer .introProgram .haetaeFestival p {
+  width: 90%;
+  margin: 0 auto;
+}
+
+html .myContainer .introProgram .haetaeFestival h3, body .myContainer .introProgram .haetaeFestival h3 {
+  margin-top: 50px;
+}
+
+html .myContainer .introProgram .haetaeFestival a, body .myContainer .introProgram .haetaeFestival a {
+  color: powderblue;
+}
+
+html .myContainer .introProgram .haetaeFestival:hover, body .myContainer .introProgram .haetaeFestival:hover {
+  -webkit-box-shadow: 0 0 30px rgba(255, 192, 192, 0.5);
+          box-shadow: 0 0 30px rgba(255, 192, 192, 0.5);
+  color: rgba(255, 192, 192, 0.5);
+  font-weight: bold;
+}
+
+html .myContainer .introFAQ, body .myContainer .introFAQ {
+  width: 100%;
+  clear: both;
+}
+
+html .myContainer .introFAQ .anchorPoint, body .myContainer .introFAQ .anchorPoint {
+  height: 100px;
+}
+
+html .myContainer .introFAQ h2, body .myContainer .introFAQ h2 {
+  height: 100px;
+  line-height: 99px;
+  margin-left: 50px;
+  color: whitesmoke;
+}
+
+html .myContainer .introFAQ ul, body .myContainer .introFAQ ul {
+  width: 90%;
+  margin: 0 auto;
+}
+
+html .myContainer .introFAQ ul li, body .myContainer .introFAQ ul li {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 80px;
+  line-height: 79px;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+html .myContainer .introFAQ ul li i, body .myContainer .introFAQ ul li i {
+  margin: 0 20px;
+}
+
+html .myContainer .introFAQ ul li:hover, body .myContainer .introFAQ ul li:hover {
+  cursor: pointer;
+  color: whitesmoke;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: rgba(255, 192, 192, 0.5);
+}
+
+html .myContainer .introFAQ ul div, body .myContainer .introFAQ ul div {
+  display: none;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+html .myContainer .introFAQ ul div a, body .myContainer .introFAQ ul div a {
+  color: powderblue;
+}
+
+html .myContainer .introFAQ ul div p, body .myContainer .introFAQ ul div p {
+  border-bottom: 5px solid whitesmoke;
+  font-size: 20px;
+  padding: 30px 50px 30px 50px;
+}
+
+html .myContainer .introFAQ ul div img, body .myContainer .introFAQ ul div img {
+  display: inline-block;
+  width: 100%;
+}
+
+html .myContainer .introBook, body .myContainer .introBook {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  margin-top: 100px;
+  -webkit-box-shadow: 0 0 30px rgba(255, 192, 192, 0.5);
+          box-shadow: 0 0 30px rgba(255, 192, 192, 0.5);
+  border-radius: 20px;
+}
+
+html .myContainer .introBook .anchorPoint, body .myContainer .introBook .anchorPoint {
+  height: 100px;
+}
+
+html .myContainer .introBook h2, body .myContainer .introBook h2 {
+  height: 100px;
+  line-height: 99px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  color: whitesmoke;
+}
+
+html .myContainer .introBook img, body .myContainer .introBook img {
+  display: block;
+  margin: 0 auto;
+}
+
+html .myContainer .introBook p, body .myContainer .introBook p {
+  width: 70%;
+  margin: 50px auto;
+  padding: 50px 50px;
+  font-size: 18px;
+  color: #CCCCCC;
+}
+
+html .myFooterWrap1, body .myFooterWrap1 {
+  width: 100%;
+  height: 200px;
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+html .myFooterWrap1 p, body .myFooterWrap1 p {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 199px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #CCCCCC;
+}
+
+html .myFooterWrap1 p:before, body .myFooterWrap1 p:before {
+  content: '"';
+}
+
+html .myFooterWrap1 p:after, body .myFooterWrap1 p:after {
+  content: '"';
+}
+
+html .myFooterWrap2, body .myFooterWrap2 {
+  width: 100%;
+  height: 250px;
+}
+
+html .myFooterWrap2 div, body .myFooterWrap2 div {
+  width: 1200px;
+  height: 150px;
+  margin: 50px auto;
+}
+
+html .myFooterWrap2 div p, body .myFooterWrap2 div p {
+  float: left;
+  width: 50%;
+  height: 100%;
+  font-size: 12px;
+}
+
+html .myFooterWrap2 h6, body .myFooterWrap2 h6 {
+  color: #CCCCCC;
+  width: 1200px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=bookStreet.css.map */
